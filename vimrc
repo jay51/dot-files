@@ -15,3 +15,4 @@ set showcmd
 set hlsearch
 set autoindent
 set visualbell
+colorscheme default
