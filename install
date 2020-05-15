@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for file in ./*
+do
+    if [ $file != "./install" ];
+    then
+        if [ $file != "./README.md" ];
+        then
+            newfile=$(echo $file | sed -e "s/\.\//\./" | sed -e "s/^/\.\.\//")
+            echo "ADD TO $file"
+            cat $file >> $newfile
+        fi
+    fi
+done
