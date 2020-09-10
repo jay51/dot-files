@@ -1,10 +1,8 @@
 set number
-
 "for copying text to clipboard"
 set clipboard=unnamedplus
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
-
 set tabstop=8 
 set softtabstop=0
 set expandtab 
@@ -16,4 +14,4 @@ set hlsearch
 set autoindent
 set visualbell
 set noswapfile
-colorscheme default
+set guicursor=i-n-v-c:block
