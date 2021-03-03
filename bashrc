@@ -5,7 +5,6 @@ get_cheat(){
     curl cheat.sh/$1
 }
 fzf(){
-    echo "${@:2} -iname *$1*"
     find "${@:2}" -iname "*$1*"
 }
 alias vi=nvim
