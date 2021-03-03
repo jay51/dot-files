@@ -15,6 +15,7 @@ alias getman=get_cheat
 alias g="gdb -q"
 alias tag="ctags -R --exclude=.git --exclude=node_modules"
 alias fz=fzf
-alias gg="grep -rnI -C 3"
+alias gg="grep -rnI -C 3 --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=build --exclude=tags"
+alias tag='ctags -R --exclude=.git --exclude=node_modules --exclude=build'
 
 # use update-alternatives --config to install software inside the opt and link it to /usr/bin
